@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+<AimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <A0001>
-            <Filename>SlimSaber-bacon-5.0.2-20150507</Filename>
+            <Filename>AIM-System-V2.0_20170711-OFFICIAL-Z010D</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -18,7 +18,7 @@
             <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit SlimSaber bacon thread">http://forum.xda-developers.com/oneplus-one/development/rom-slimsaber-bacon-t2858033</XDAUrl>
+                description="Visit AIMROM Z010D thread">https://forum.xda-developers.com/zenfone2/general/rom-aim-rom-t3615288</XDAUrl>
 	</A0001>
     </Stable>
-</SlimOTA>
+</AimOTA>

@@ -14,31 +14,31 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota;
+package com.anand.aimota;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import com.fusionjack.slimota.configs.LinkConfig;
-import com.fusionjack.slimota.dialogs.WaitDialogFragment;
-import com.fusionjack.slimota.fragments.SlimOTAFragment;
+import com.anand.aimota.configs.LinkConfig;
+import com.anand.aimota.dialogs.WaitDialogFragment;
+import com.anand.aimota.fragments.AimOTAFragment;
 
 public class MainActivity extends PreferenceActivity implements
         WaitDialogFragment.OTADialogListener, LinkConfig.LinkConfigListener {
 
-    private static final String FRAGMENT_TAG = SlimOTAFragment.class.getName();
-    private SlimOTAFragment mFragment;
+    private static final String FRAGMENT_TAG = AimOTAFragment.class.getName();
+    private AimOTAFragment mFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mFragment = (SlimOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
+        mFragment = (AimOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
         if (mFragment == null) {
             getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new SlimOTAFragment(), FRAGMENT_TAG)
+                    .replace(android.R.id.content, new AimOTAFragment(), FRAGMENT_TAG)
                     .commit();
         }
 
